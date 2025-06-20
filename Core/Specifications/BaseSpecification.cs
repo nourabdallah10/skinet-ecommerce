@@ -6,7 +6,7 @@ namespace Core.Specifications
 {
     public class BaseSpecification<T> : ISpecification<T>
     {
-        private readonly Expression<Func<T, bool>> _criteria;
+        private readonly Expression<Func<T, bool>>? _criteria;
         public BaseSpecification(Expression<Func<T, bool>>? criteria)
         {
             _criteria = criteria;
